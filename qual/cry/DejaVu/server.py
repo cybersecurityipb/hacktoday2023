@@ -50,11 +50,11 @@ def menu():
 
 def main():
     print("Loading... Please wait.")
-    start = time.time()
     cipher = StreamCipher()
     fl4g = open("flag.txt", "rb").read()
     enc_fl4g = cipher.encrypt(fl4g)
     print("Welcome!")
+    start = time.time()
     while start - time.time() <= 7:
         menu()
         opcode = input("[>] ").strip()
