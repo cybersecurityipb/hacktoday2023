@@ -4,3 +4,6 @@ bina bocil sd pertanian maju jaya sedang belajar materi tambah dan kurang, namun
 
 ## release
 chall.py
+
+## Flag
+`hacktoday{D1d_u_453_z3_ZzZ_zZz_zZZ_ZZz?}`
