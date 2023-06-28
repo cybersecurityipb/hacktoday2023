@@ -1,3 +1,4 @@
+<h1>DCHEZKIBOXS</h1>
 Kali ini Pak Masse menemukan sebuah port aneh yang berisi kalimat rahasia.
 Untuk melihat kalimat tersebut ia diminta memasukan password berupa Substring terpajang pertama dari string yang diberikan port tersebut yang merupakan "kata DCHEZKIBOXS".
 Sebuah string dikatakan "kata DCHEZKIBOXS" jika dan hanya jika string tersebut dibelah dua secara horizontal kedua bagian string (atas dan bawah) akan membentuk bagian yang seimbang dan dapat dibentuk menjadi sama persis jika beberapa bagiannya dirotasi.
