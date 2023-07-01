@@ -17,4 +17,5 @@ repo soal HackToday 2023
 | 8   | **Spam**                  | Cry       |✔️       |         |           | `Bima Rizqy#8070`       |
 | 9   | **kurang-lebih+**         | Rev       |✔️       |           |           | `yqroo#2166`        |
 |10   | **yorr**                  | Rev       |✔️       |          |            | `anro128`      |
+
 Google Docs : [Rekap Soal](https://docs.google.com/document/d/1Jkl5ULk40FsfhADBwwzSAZdu2R5L2Sa29-jTCr5_meM/edit?usp=sharing)
