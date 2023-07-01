@@ -4,4 +4,4 @@ Mas Denu adalah mentor Yudo yang sudah lama hilang. Beliau menghilang setelah be
 Bantu Yudo untuk menemukan pesan dari Mas Denu!
 
 ## flag
-`hacktoday{Yeyyy_n0w_y0U_kNOw_5Lid1ng_Wind0w5_4l6oR1thMs!}`
+`hacktoday{j4dilaH_dIr1_s3nD1ri}`
