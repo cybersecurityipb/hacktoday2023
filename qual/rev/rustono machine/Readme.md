@@ -1,7 +1,7 @@
 # rustono machine
 
 ## Desc
-tau kah bahwa hawa diciptakan dari tulang rustuk nabi adam hehe
+tahukah kamu bahwa hawa diciptakan dari tulang rustuk nabi adam hehe
 
 ## release
 - rustono-machine
