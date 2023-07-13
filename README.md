@@ -18,5 +18,7 @@ repo soal HackToday 2023
 | 9   | **kurang-lebih+**         | Rev       |✔️       |           |           | `yqroo#2166`        |
 |10   | **yorr**                  | Rev       |✔️       |          |            | `anro128`      |
 |11   | **DCHEZKIBOXS**           | Misc       |✔️       |          |            | `anro128`      |
+|12   | **Invisible**           | Foren       |✔️       |          |            |`z__ran`       |
+|13   | **rustono machine**           | Rev       |✔️       |          |            |`yqroo`       |
 
 Google Docs : [Rekap Soal](https://docs.google.com/document/d/1Jkl5ULk40FsfhADBwwzSAZdu2R5L2Sa29-jTCr5_meM/edit?usp=sharing)
