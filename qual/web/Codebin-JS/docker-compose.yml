@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - '8989:8989'
+    depends_on:
+      - mongo
+    links:
+      - mongo
+  mongo:
+    image: mongo
+    restart: always
