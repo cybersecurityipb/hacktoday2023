@@ -11,8 +11,8 @@ repo soal HackToday 2023
 | 2  	| **Absen**                	| Pwn      	|✔️     	|       	|         	| `yqroo#2166`  	|
 | 3  	| **Peninggalan Mas Denu** 	| Misc     	|✔️     	|       	|         	| `ln y#1800`   	|
 | 4  	| **OnlyOnePrime** 	        | Cry     	|✔️     	|       	|         	| `ZafiN#5650`   	|
-| 5  	| **OnlyAdminCanSee** 	    | Rev     	|✔️     	|       	|         	| `Encrypted#0166`|
-| 6  	| **LogInspek** 	          | Web     	|✔️     	|       	|         	| `Encrypted#0166`|
+| 5  	| **OnlyAdminCanSee** 	    | Rev     	|✔️     	|       	|         	| `Encrypted`|
+| 6  	| **LogInspek** 	          | Web     	|✔️     	|       	|         	| `Encrypted`|
 | 7   | **Where is my git?**      | Misc      |✔️       |           |           | `jedi#5782`       |
 | 8   | **Spam**                  | Cry       |✔️       |         |           | `Bima Rizqy#8070`       |
 | 9   | **kurang-lebih+**         | Rev       |✔️       |           |           | `yqroo#2166`        |
@@ -20,5 +20,6 @@ repo soal HackToday 2023
 |11   | **DCHEZKIBOXS**           | Misc       |✔️       |          |            | `anro128`      |
 |12   | **Invisible**           | Foren       |✔️       |          |            |`z__ran`       |
 |13   | **rustono machine**           | Rev       |✔️       |          |            |`yqroo`       |
+|14  	| **Codebin-JS** 	          | Web     	|✔️     	|       	|         	| `Encrypted`|
 
 Google Docs : [Rekap Soal](https://docs.google.com/document/d/1Jkl5ULk40FsfhADBwwzSAZdu2R5L2Sa29-jTCr5_meM/edit?usp=sharing)
