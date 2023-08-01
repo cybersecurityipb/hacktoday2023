@@ -24,7 +24,7 @@ repo soal HackToday 2023
 |15  	| **Kuala Lumpur** 	        | Osint    	|✔️     	|       	|         	| `ghifar`           |
 |16  	| **Initial Point** 	      | Osint     |✔️     	|       	|         	| `kelapacuyy`       |
 |17  	| **Doodled** 	            | Foren     |✔️     	|       	|         	| `kelapacuyy`       |
-|16  	| **dummy**          	      | Foren     |✔️     	|       	|         	| `arai`       |
-|17  	| **yesterday-afternoon-kidz**  | Foren     |✔️     	|       	|         	| `arai`       |
+|18  	| **dummy**          	      | Foren     |✔️     	|       	|         	| `arai`       |
+|19  	| **yesterday-afternoon-kidz**  | Foren     |✔️     	|       	|         	| `arai`       |
 
 Google Docs : [Rekap Soal](https://docs.google.com/document/d/1Jkl5ULk40FsfhADBwwzSAZdu2R5L2Sa29-jTCr5_meM/edit?usp=sharing)
