@@ -7,10 +7,10 @@ repo soal HackToday 2023
 # Challenges
 | No 	| Name                     	| Category 	| Qual 	  | Final 	| Service 	| Author        	|
 |----	|--------------------------	|----------	|:-------:|---------|---------	|---------------|
-| 1  	| **Deja Vu**               | Cry      	|       	|       	|         	| `patsac#9402` 	|
+| 1  	| **Deja Vu**               | Cry      	|✔️      	|       	|         	| `patsac#9402` 	|
 | 2  	| **Absen**                	| Pwn      	|✔️     	|       	|         	| `yqroo#2166`  	|
 | 3  	| **Peninggalan Mas Denu** 	| Misc     	|✔️     	|       	|         	| `ln y#1800`   	|
-| 4  	| **OnlyOnePrime** 	        | Cry     	|✔️     	|       	|         	| `ZafiN#5650`   	|
+| 4  	| **OnlyOnePrime** 	        | Cry     	|       	|       	|         	| `ZafiN#5650`   	|
 | 5  	| **OnlyAdminCanSee** 	    | Rev     	|✔️     	|       	|         	| `Encrypted`        |
 | 6  	| **LogInspek** 	          | Web     	|✔️     	|       	|         	| `Encrypted`        |
 | 7   | **Where is my git?**      | Misc      |✔️       |         |           | `jedi#5782`        |
