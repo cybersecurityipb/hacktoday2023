@@ -7,7 +7,7 @@ repo soal HackToday 2023
 # Challenges
 | No 	| Name                     	| Category 	| Qual 	  | Final 	| Service 	| Author        	|
 |----	|--------------------------	|----------	|:-------:|---------|---------	|---------------|
-| 1  	| **Deja Vu**               | Cry      	|✔️     	|       	|         	| `patsac#9402` 	|
+| 1  	| **Deja Vu**               | Cry      	|       	|       	|         	| `patsac#9402` 	|
 | 2  	| **Absen**                	| Pwn      	|✔️     	|       	|         	| `yqroo#2166`  	|
 | 3  	| **Peninggalan Mas Denu** 	| Misc     	|✔️     	|       	|         	| `ln y#1800`   	|
 | 4  	| **OnlyOnePrime** 	        | Cry     	|✔️     	|       	|         	| `ZafiN#5650`   	|
@@ -19,7 +19,7 @@ repo soal HackToday 2023
 |10   | **yorr**                  | Rev       |✔️       |         |           | `anro128`          |
 |11   | **DCHEZKIBOXS**           | Misc      |✔️       |         |           | `anro128`          |
 |12   | **Invisible**             | Foren     |✔️       |         |           |`z__ran`            |
-|13   | **rustono machine**       | Rev       |✔️       |         |           |`yqroo`             |
+|13   | **rustono machine**       | Rev       |         |         |           |`yqroo`             |
 |14  	| **Codebin-JS** 	          | Web     	|✔️     	|       	|         	| `Encrypted`        |
 |15  	| **Kuala Lumpur** 	        | Osint    	|✔️     	|       	|         	| `ghifar`           |
 |16  	| **Initial Point** 	      | Osint     |✔️     	|       	|         	| `kelapacuyy`       |
