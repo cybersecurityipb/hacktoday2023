@@ -26,5 +26,8 @@ repo soal HackToday 2023
 |17  	| **Doodled** 	            | Foren     |✔️     	|       	|         	| `kelapacuyy`       |
 |18  	| **dummy**          	      | Foren     |✔️     	|       	|         	| `arai`       |
 |19  	| **yesterday-afternoon-kidz**  | Foren     |✔️     	|       	|         	| `arai`       |
+|20  	| **MUA**                   | Osint     |✔️     	|       	|         	| `glitchgoo`       |
+|21  	| **NT**                    | Foren     |     	  |✔️      	|         	| `Zafin`       |
+|22  	| **Email kompani**         | Misc      |       	|✔️      	|         	| `yqroo`       |
 
 Google Docs : [Rekap Soal](https://docs.google.com/document/d/1Jkl5ULk40FsfhADBwwzSAZdu2R5L2Sa29-jTCr5_meM/edit?usp=sharing)
