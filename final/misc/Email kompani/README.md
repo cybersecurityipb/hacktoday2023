@@ -1,4 +1,4 @@
-# email-kompani
+# Email kompani
 
 ## Desc
 I developed this email service for my company and its partners. It's functional, but occasionally buggy; there are times when our emails don't get sent. Despite these issues, we decided to try this email service for a month. However, to our dismay, someone managed to steal our company's secret recipe. We are left wondering: What just happened?
