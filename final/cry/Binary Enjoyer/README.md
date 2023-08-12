@@ -10,7 +10,8 @@ nc 103.181.183.216 <port>
 
 ## Release
 
+- server.py
 - nc 103.181.183.216 <port>
 
 ## Flag
-'hacktoday{3NCrYpt_S4tU_S4tU_T1dAk_4m4N}'
+'hacktoday{1n1_S04l_UTs_4rS1T3ktUr_Komput3R}'
