@@ -4,7 +4,7 @@
 jangan sampai salah link yah :>
 
 ## release
-chall.jar
+rev.jar
 
 ## flag
 ```hacktoday{obfuscate_dikit_gak_ngaruh_636f6d7065}```
