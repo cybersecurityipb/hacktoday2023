@@ -1,0 +1,13 @@
+version: '3'
+services:
+  agrihack:
+    container_name: UnknownCipher
+    restart: always
+    network_mode: bridge
+    build:
+      context: .
+      args:
+        binary: server.py
+    ports:
+      - "19000:5000" # exposed:local, port
+    read_only: true
