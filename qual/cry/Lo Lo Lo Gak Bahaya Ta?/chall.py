@@ -26,9 +26,9 @@ def main():
     sizeSlice = len(FLAG) // 4
     
     sliceFLAG = [FLAG[i*sizeSlice:(i+1)*sizeSlice] for i in range(4)]
-    list_pub = [bytes_to_long(os.urandom(255)) for _ in range(3)]
+    list_pub = [random.getrandbits(1024) for _ in range(3)]
     list_priv = [random.getrandbits(256) for _ in range(3)]
-    last_priv = random.getrandbits(256)
+    last_priv = random.getrandbits(512)
     S = sum([i*j for i, j in zip(list_pub, list_priv)]) - last_priv
 
     (n, p, q) = get_factor(NBIT)
