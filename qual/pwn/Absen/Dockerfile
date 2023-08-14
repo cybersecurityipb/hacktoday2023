@@ -1,20 +1,18 @@
-FROM ubuntu:22.04
+FROM ubuntu:jammy
 
-RUN apt-get update && apt-get install -y socat
-RUN groupadd -r ctf && useradd -r -g ctf ctf
+EXPOSE 8000
 
-WORKDIR /CTF
-COPY flag.txt /CTF/flag.txt
-COPY absen /CTF/absen
+RUN apt update && apt upgrade -y && apt update --fix-missing
+RUN apt-get install -y socat
 
-RUN chown -R ctf:ctf /CTF && \
-    chmod 500 /CTF && \
-    chmod 440 /CTF/flag.txt && \
-    chmod 550 /CTF/absen
+RUN mkdir /pwn
+COPY src/flag.txt /pwn/flag.txt
+COPY src/absen /pwn/absen
+WORKDIR /pwn
 
-USER ctf 
+RUN chown -R 755 /pwn
+RUN chmod 700 /usr/bin/* /bin/* /tmp /dev/shm
+RUN chmod 755 /usr/bin/env /bin/dash /bin/bash /bin/sh /bin/cat /usr/bin/id /bin/ls
+RUN chmod +x /pwn/absen
 
-CMD ["socat", "TCP-LISTEN:8000,reuseaddr,fork","EXEC:/CTF/absen,stderr"]
-
-# docker build -t absen
-# docker run -d -p 8000:8000 -it
+CMD socat TCP-LISTEN:8000,reuseaddr,fork EXEC:/pwn/absen,su=nobody
