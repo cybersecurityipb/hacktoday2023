@@ -7,4 +7,4 @@ tahukah kamu bahwa hawa diciptakan dari tulang rustuk nabi adam hehe
 - rustono-machine
 
 ## flag
-`Hacktoday{MrKrabsss_is_Rustaceans}`
+`hacktoday{MrKrabsss_is_Rustaceans}`
