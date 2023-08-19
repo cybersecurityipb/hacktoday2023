@@ -1,7 +1,7 @@
 # packer
 
 ## desc
-my secret documents have been packed! no one will be able to retrieve it right?
+my secret documents have been packed, but I lost the unpacker :(
 
 **WARNING: be careful when executing the pyc files!**
 
