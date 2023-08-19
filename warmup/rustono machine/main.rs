@@ -10,7 +10,7 @@ fn add_user(username: String, password: String) -> User {
     User {
         username,
         password,
-        secret: String::from("JBQWG23UN5SGC6L3JVZEW4TBMJZXG4ZAFBYGC4TUEAYS6MRJ"), // Hacktoday{MrKrabsss (part 1/2)
+        secret: String::from("NBQWG23UN5SGC6L3JVZEW4TBMJZXG4YK"), // hacktoday{MrKrabsss (part 1/2)
     }
 }
 
