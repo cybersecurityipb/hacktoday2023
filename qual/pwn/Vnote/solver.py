@@ -2,6 +2,7 @@ from pwn import *
 
 elf  = context.binary = ELF('vnote')
 p = elf.process()
+# p = remote('localhost', 17002)
 
 
 # overwrite vtable
