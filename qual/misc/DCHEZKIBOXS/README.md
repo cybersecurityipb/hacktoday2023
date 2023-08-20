@@ -11,3 +11,6 @@ Karena string yang diberikan sangat panjang, untuk menemukan passwordnya Pak Mas
 
 ## flag
 `hacktoday{Yeyyy_n0w_y0U_kNOw_5Lid1ng_Wind0w5_4l6oR1thMs!}`
+
+## link gdrive
+https://drive.google.com/uc?export=download&id=1FhlBfwibXF8uJkiJmkVMX52HLjEins0C
