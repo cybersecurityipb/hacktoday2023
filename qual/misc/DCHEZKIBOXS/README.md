@@ -3,7 +3,7 @@
   Untuk melihat kalimat tersebut ia diminta memasukan password berupa Substring terpajang pertama dari string yang diberikan port tersebut yang merupakan "kata DCHEZKIBOXS".
   Sebuah string dikatakan "kata DCHEZKIBOXS" jika dan hanya jika string tersebut dibelah dua secara horizontal kedua bagian string (atas dan bawah) akan membentuk bagian yang seimbang dan dapat dibentuk menjadi sama persis jika beberapa bagiannya dirotasi.
   Contoh: "CHECK" merupakan salah satu "kata DCHEZKIBOXS" karena ketika belah dua kedua bagian akan membentuk bagian yang seimbang. visualisasi contoh dapat dilihat di bagian "attachement".
-Karena string yang diberikan sangat panjang, untuk menemukan passwordnya Pak Masse menggeser-geser jendela ruangannya atau memainkan dua buah pointer miliknya agar lebih cepat mendapatkan inspirasi.
+Karena string yang diberikan sangat panjang, untuk menemukan passwordnya Pak Masse menggeser-geser jendela ruangannya atau memainkan dua buah pointer miliknya untuk mendapatkan berbagai inspirasi.
 
 `nc <ip> 18001`
 
