@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from Crypto.Util.number import bytes_to_long, long_to_bytes, getPrime, inverse, GCD
 from random import sample, randint, shuffle
 
