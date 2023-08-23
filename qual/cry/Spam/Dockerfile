@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:jammy
 
 EXPOSE 5000
 
@@ -6,9 +6,10 @@ ARG binary
 ENV binary=${binary}
 
 # update
-RUN apt update && apt upgrade -y && apt update --fix-missing
-RUN apt-get install python3 -y python3-pip socat
-RUN pip3 install pycryptodome
+RUN apt-get update && apt-get upgrade -y && apt-get update --fix-missing
+RUN apt-get install -y python3 socat
+RUN apt-get install -y python3-pip
+RUN python3 -m pip install pycryptodome
 
 
 # copy file
