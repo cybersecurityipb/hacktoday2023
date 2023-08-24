@@ -6,5 +6,5 @@ services:
     restart: always
     build: .
     ports:
-      - "17002:8000"
+      - "17003:8000"
     read_only: true
