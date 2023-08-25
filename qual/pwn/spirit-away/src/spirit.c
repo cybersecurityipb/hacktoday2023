@@ -83,6 +83,10 @@ int main(int argc, char** argv){
 
     init();
     seccomp_rules();
+    printf("===============================\n");
+    printf("== WELCOME TO HACKTODAY 2023 ==\n");
+    printf("===============================\n");
+    printf("can u secure ticket for final??\n");
     while(1){
         menu();
         printf("> ");
