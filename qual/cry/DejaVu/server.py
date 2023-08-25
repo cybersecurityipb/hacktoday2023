@@ -72,27 +72,29 @@ def menu():
 
 
 def main():
-    print("Welcome!")
     cipher = StreamCipher()
     with open("flag.txt", "rb") as f:
         fl4g = f.read()
         f.close()
     enc_fl4g = cipher.encrypt(fl4g, 1)
-    while 1:
+    print("Welcome!")
+    start = time.time()
+    while start - time.time() <= 10:
         menu()
         opcode = input("[>] ").strip()
         if opcode == "3":
             break
         elif opcode == "1":
             msg = input("Message to encrypt : ").strip().encode()
-            if len(msg) == 0:
-                print("Invalid message.")
-                continue
             ct = cipher.encrypt(msg)
         elif opcode == "2":
+            msg = "flag"
             ct = enc_fl4g
         else:
             print("Maksud?")
+            continue
+        if len(msg) == 0:
+            print("Invalid message.")
             continue
         print("Encrypted message :", ct.hex())
     return 0
