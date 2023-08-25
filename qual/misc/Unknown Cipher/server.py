@@ -36,7 +36,8 @@ def encrypt(msg):
     return hehe
 
 def main():
-    flag = open("flag.txt", "r").read().strip()
+    # flag = open("flag.txt", "r").read().strip()
+    flag = "hacktoday{3NCrYpt_S4tU_S4tU_T1dAk_4m4N}"
     while True:
       generate()
       try:

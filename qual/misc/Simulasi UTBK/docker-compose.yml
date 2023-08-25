@@ -1,0 +1,13 @@
+version: '3'
+services:
+  hacktoday2023:
+    container_name: UTBK
+    restart: always
+    network_mode: bridge
+    build:
+      context: .
+      args:
+        binary: server.py
+    ports:
+      - "19003:5000" # exposed:local, port
+    read_only: true
