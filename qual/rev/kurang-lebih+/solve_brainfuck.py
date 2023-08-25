@@ -12,4 +12,4 @@ for i in arr:
     else:
         char += chr(len(a)*len(b) - len(c))
 
-print("Hacktoday{%s}" % char)
+print("hacktoday{%s}" % char)
