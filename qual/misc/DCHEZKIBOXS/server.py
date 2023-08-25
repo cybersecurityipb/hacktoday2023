@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from random import randint
 from secret import get_password
 
