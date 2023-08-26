@@ -4,7 +4,7 @@ Pada suatu hari, ada seorang anak yang sedang berkendara menggunakan motor. Keti
 
 dahlah males ngarang cerita kerjain ajh pokoknya (^_^)
 
-nc <ip> 19008
+`nc <ip> 19008`
 
 
 # Attachment
