@@ -9,7 +9,7 @@ nc <ip> 19008
 
 # Attachment
 
-attachment/chall.py
+`attachment/chall.py`
 
 
 # Flag
