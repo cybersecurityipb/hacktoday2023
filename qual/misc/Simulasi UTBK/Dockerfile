@@ -16,8 +16,8 @@ RUN apt-get install curl -y
 RUN mkdir /challs
 COPY $binary /challs/$binary
 COPY server.py /challs/server.py
-COPY server.py /challs/database.txt
-COPY server.py /challs/flag.txt
+COPY database.txt /challs/database.txt
+COPY flag.txt /challs/flag.txt
 WORKDIR /challs
 
 # securing flag

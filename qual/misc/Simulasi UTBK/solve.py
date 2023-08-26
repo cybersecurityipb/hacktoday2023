@@ -2,13 +2,16 @@
 from pwn import *
 
 #r = remote("103.181.183.216", 19000)
-r = process("./server.py", level="debug")
+r = remote('localhost', 19003, level='debug')
+# r = process("./server.py", level="debug")
 
 kamus = {}
 db = open('database.txt', 'r').readlines()
 for i in db:
     assert '? ' in i and i.count('? ') == 1
     i = i.strip().split('? ')
+    # print(i)
+    # input()
     # print(i[0]+'?')
     kamus[i[0]+'?'] = i[1]
 
