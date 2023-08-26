@@ -5,7 +5,7 @@ from sympy import primefactors
 from itertools import permutations
 from pwn import *
 
-r = remote('localhost', 18000, level = 'debug')
+r = remote('103.181.183.216', 18001, level = 'debug')
 
 e = 65537
 full_password = []
