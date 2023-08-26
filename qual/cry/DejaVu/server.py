@@ -79,7 +79,7 @@ def main():
     enc_fl4g = cipher.encrypt(fl4g, 1)
     print("Welcome!")
     start = time.time()
-    while time.time() - start  <= 45:
+    while time.time() - start  <= 50:
         menu()
         opcode = input("[>] ").strip()
         if opcode == "3":
