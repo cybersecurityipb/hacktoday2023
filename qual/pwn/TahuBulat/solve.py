@@ -1,8 +1,9 @@
 from pwn import *
 
-elf = context.binary = ELF("./soal")
+elf = context.binary = ELF("./src/soal")
 
-p = process("./soal")
+# p = process("./soal")
+p = remote('103.181.183.216', 17005)
 
 #gdb.attach(p)
 
