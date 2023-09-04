@@ -14,4 +14,4 @@ f.write(prog)
 f.flush()
 
 os.chmod(f.name, 0o755)
-subprocess.run(['./blink', f.name], input=b'')
+subprocess.run(["./blink", "-m", f.name], input=b'')
