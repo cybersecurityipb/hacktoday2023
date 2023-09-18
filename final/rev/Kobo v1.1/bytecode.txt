@@ -1,0 +1,244 @@
+   0           0 RESUME                   0
+
+   1           2 LOAD_CONST               0 (0)
+               4 LOAD_CONST               1 (('Image',))
+               6 IMPORT_NAME              0 (PIL)
+               8 IMPORT_FROM              1 (Image)
+              10 STORE_NAME               1 (Image)
+              12 POP_TOP
+
+   3          14 LOAD_NAME                1 (Image)
+              16 LOAD_ATTR                4 (open)
+              36 PUSH_NULL
+              38 LOAD_CONST               2 ('kobos.png')
+              40 CALL                     1
+              48 STORE_NAME               3 (kobo)
+
+   4          50 LOAD_NAME                3 (kobo)
+              52 LOAD_ATTR                9 (load + NULL|self)
+              72 CALL                     0
+              80 STORE_NAME               5 (pixKobo)
+
+   6          82 LOAD_NAME                2 (open)
+              84 PUSH_NULL
+              86 LOAD_CONST               3 ('flag.txt')
+              88 LOAD_CONST               4 ('r')
+              90 CALL                     2
+              98 BEFORE_WITH
+             100 STORE_NAME               6 (text)
+
+   7         102 LOAD_NAME                6 (text)
+             104 LOAD_ATTR               15 (read + NULL|self)
+             124 CALL                     0
+             132 STORE_NAME               8 (flag)
+
+   6         134 LOAD_CONST               5 (None)
+             136 LOAD_CONST               5 (None)
+             138 LOAD_CONST               5 (None)
+             140 CALL                     2
+             148 POP_TOP
+
+   9     >>  150 LOAD_NAME                1 (Image)
+             152 LOAD_ATTR               18 (new)
+             172 PUSH_NULL
+             174 LOAD_CONST               6 ('RGBA')
+             176 LOAD_NAME                3 (kobo)
+             178 LOAD_ATTR               20 (width)
+             198 LOAD_NAME                3 (kobo)
+             200 LOAD_ATTR               22 (height)
+             220 BUILD_TUPLE              2
+             222 LOAD_CONST               7 ((0, 0, 0, 0))
+             224 CALL                     3
+             232 STORE_NAME              12 (embedded)
+
+  10         234 LOAD_NAME               12 (embedded)
+             236 LOAD_ATTR                9 (load + NULL|self)
+             256 CALL                     0
+             264 STORE_NAME              13 (pixEmbedded)
+
+  12         266 LOAD_CONST               0 (0)
+             268 STORE_NAME              14 (index)
+
+  13         270 LOAD_NAME               15 (range)
+             272 PUSH_NULL
+             274 LOAD_CONST               0 (0)
+             276 LOAD_NAME               12 (embedded)
+             278 LOAD_ATTR               20 (width)
+             298 CALL                     2
+             306 GET_ITER
+         >>  308 FOR_ITER               188 (to 688)
+             312 STORE_NAME              16 (x)
+
+  14         314 LOAD_NAME               15 (range)
+             316 PUSH_NULL
+             318 LOAD_CONST               0 (0)
+             320 LOAD_NAME               12 (embedded)
+             322 LOAD_ATTR               22 (height)
+             342 CALL                     2
+             350 GET_ITER
+         >>  352 FOR_ITER               163 (to 682)
+             356 STORE_NAME              17 (y)
+
+  15         358 LOAD_NAME                5 (pixKobo)
+             360 LOAD_NAME               16 (x)
+             362 LOAD_NAME               17 (y)
+             364 BUILD_TUPLE              2
+             366 BINARY_SUBSCR
+             370 UNPACK_SEQUENCE          4
+             374 STORE_NAME              18 (kr)
+             376 STORE_NAME              19 (kg)
+             378 STORE_NAME              20 (kb)
+             380 STORE_NAME              21 (ka)
+
+  17         382 LOAD_NAME               14 (index)
+             384 LOAD_NAME               22 (len)
+             386 PUSH_NULL
+             388 LOAD_NAME                8 (flag)
+             390 CALL                     1
+             398 COMPARE_OP              18 (bool(<))
+             402 POP_JUMP_IF_FALSE       11 (to 428)
+
+  18         406 LOAD_NAME                8 (flag)
+             408 LOAD_NAME               14 (index)
+             410 BINARY_SUBSCR
+             414 STORE_NAME              23 (char)
+
+  19         416 LOAD_NAME               14 (index)
+             418 LOAD_CONST               8 (1)
+             420 BINARY_OP               13 (+=)
+             424 STORE_NAME              14 (index)
+             426 JUMP_FORWARD             2 (to 432)
+
+  21     >>  428 LOAD_CONST               9 ('\x00')
+             430 STORE_NAME              23 (char)
+
+  23     >>  432 LOAD_NAME               24 (int)
+             434 PUSH_NULL
+             436 LOAD_NAME               18 (kr)
+             438 LOAD_CONST              10 ('08b')
+             440 FORMAT_WITH_SPEC
+             442 LOAD_CONST               5 (None)
+             444 LOAD_CONST              11 (-2)
+             446 BINARY_SLICE
+             448 LOAD_NAME               25 (ord)
+             450 PUSH_NULL
+             452 LOAD_NAME               23 (char)
+             454 CALL                     1
+             462 LOAD_CONST              10 ('08b')
+             464 FORMAT_WITH_SPEC
+             466 LOAD_CONST               0 (0)
+             468 LOAD_CONST              12 (2)
+             470 BINARY_SLICE
+             472 BINARY_OP                0 (+)
+             476 LOAD_CONST              12 (2)
+             478 CALL                     2
+             486 STORE_NAME              26 (er)
+
+  24         488 LOAD_NAME               24 (int)
+             490 PUSH_NULL
+             492 LOAD_NAME               19 (kg)
+             494 LOAD_CONST              10 ('08b')
+             496 FORMAT_WITH_SPEC
+             498 LOAD_CONST               5 (None)
+             500 LOAD_CONST              11 (-2)
+             502 BINARY_SLICE
+             504 LOAD_NAME               25 (ord)
+             506 PUSH_NULL
+             508 LOAD_NAME               23 (char)
+             510 CALL                     1
+             518 LOAD_CONST              10 ('08b')
+             520 FORMAT_WITH_SPEC
+             522 LOAD_CONST              12 (2)
+             524 LOAD_CONST              13 (4)
+             526 BINARY_SLICE
+             528 BINARY_OP                0 (+)
+             532 LOAD_CONST              12 (2)
+             534 CALL                     2
+             542 STORE_NAME              27 (eg)
+
+  25         544 LOAD_NAME               24 (int)
+             546 PUSH_NULL
+             548 LOAD_NAME               20 (kb)
+             550 LOAD_CONST              10 ('08b')
+             552 FORMAT_WITH_SPEC
+             554 LOAD_CONST               5 (None)
+             556 LOAD_CONST              11 (-2)
+             558 BINARY_SLICE
+             560 LOAD_NAME               25 (ord)
+             562 PUSH_NULL
+             564 LOAD_NAME               23 (char)
+             566 CALL                     1
+             574 LOAD_CONST              10 ('08b')
+             576 FORMAT_WITH_SPEC
+             578 LOAD_CONST              13 (4)
+             580 LOAD_CONST              14 (6)
+             582 BINARY_SLICE
+             584 BINARY_OP                0 (+)
+             588 LOAD_CONST              12 (2)
+             590 CALL                     2
+             598 STORE_NAME              28 (eb)
+
+  26         600 LOAD_NAME               24 (int)
+             602 PUSH_NULL
+             604 LOAD_NAME               20 (kb)
+             606 LOAD_CONST              10 ('08b')
+             608 FORMAT_WITH_SPEC
+             610 LOAD_CONST               5 (None)
+             612 LOAD_CONST              11 (-2)
+             614 BINARY_SLICE
+             616 LOAD_NAME               25 (ord)
+             618 PUSH_NULL
+             620 LOAD_NAME               23 (char)
+             622 CALL                     1
+             630 LOAD_CONST              10 ('08b')
+             632 FORMAT_WITH_SPEC
+             634 LOAD_CONST              14 (6)
+             636 LOAD_CONST              15 (8)
+             638 BINARY_SLICE
+             640 BINARY_OP                0 (+)
+             644 LOAD_CONST              12 (2)
+             646 CALL                     2
+             654 STORE_NAME              29 (ea)
+
+  28         656 LOAD_NAME               26 (er)
+             658 LOAD_NAME               27 (eg)
+             660 LOAD_NAME               28 (eb)
+             662 LOAD_NAME               29 (ea)
+             664 BUILD_TUPLE              4
+             666 LOAD_NAME               13 (pixEmbedded)
+             668 LOAD_NAME               16 (x)
+             670 LOAD_NAME               17 (y)
+             672 BUILD_TUPLE              2
+             674 STORE_SUBSCR
+             678 JUMP_BACKWARD          165 (to 352)
+
+  14     >>  682 END_FOR
+             684 JUMP_BACKWARD          190 (to 308)
+
+  13     >>  688 END_FOR
+
+  30         690 LOAD_NAME               12 (embedded)
+             692 LOAD_ATTR               61 (save + NULL|self)
+             712 LOAD_CONST              16 ('kobok.png')
+             714 CALL                     1
+             722 POP_TOP
+             724 RETURN_CONST             5 (None)
+
+   6     >>  726 PUSH_EXC_INFO
+             728 WITH_EXCEPT_START
+             730 TO_BOOL
+             738 POP_JUMP_IF_TRUE         1 (to 744)
+             742 RERAISE                  2
+         >>  744 POP_TOP
+             746 POP_EXCEPT
+             748 POP_TOP
+             750 POP_TOP
+             752 EXTENDED_ARG             1
+             754 JUMP_BACKWARD          304 (to 150)
+
+None     >>  758 COPY                     3
+             760 POP_EXCEPT
+             762 RERAISE                  1
+ExceptionTable:
+  100 to 132 -> 726 [1] lasti
+  726 to 744 -> 758 [3] lasti
