@@ -79,7 +79,7 @@ def main():
 
     avg_times = sum(LIST_TIMES) / iterasi
 
-    if avg_times < 5:
+    if avg_times < 5.5:
         print(f"Congrats!\nHere's the flag : {FLAG}")
     else:
         print(f"Nice Try!. {avg_times}")
