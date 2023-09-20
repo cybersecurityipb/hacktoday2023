@@ -16,7 +16,9 @@ list_product = list(set(list_product))
 
 list_times = []
 
-r = process("./server.py")
+#r = process("./server.py")
+
+r = remote("103.181.183.216", 18004)
 
 iterasi = 50
 for loop in range(iterasi):
