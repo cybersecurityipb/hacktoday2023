@@ -6,48 +6,64 @@ from flask import (
     url_for,
     redirect,
     session,
-    render_template_string
+    abort
 )
 # from pin import get_pin_for_secret()
-app = Flask(__name__)
+app = Flask(__name__, template_folder="./templates/", static_folder="./static/")
 app.secret_key = 'Secret' # pin_urandom()
 
 
+msg = """
+Hello, This is Maru.
 
-mail = """
-Hello team,
+We have a new individual who has expressed a strong interest in joining our community. Could you please schedule an interview to evaluate their potential fit with us?
+Here are the details of the applicant:
 
-A new hacker wants to join our private Bug bounty program! Mary, can you schedule an interview?
+- Name: {{ name_member }}
+- Role: {{ role_member }}
 
- - Name: {{ maru }}
- - Surname: {{ hacker_surname }}
- - Email: {{ hacker_email }}
- - Birth date: {{ hacker_bday }}
-
-I'm sending you the details of the application in the attached CSV file:
-
- - '{{ maru }}{{ hacker_surname }}{{ hacker_email }}{{ hacker_bday }}.csv'
+I have attached the application details in the following file:
+- 'Details: {{ maru }}{{ maru_notes }}{{ name_member }}{{ role_member }}.xlsx'
+Your prompt attention to this matter is greatly appreciated.
 
 Best regards,
+Maru
 """
 
-def sendmail(address, content):
+def newmember(address, content):
     try:
         content += "\n\n{{ signature }}"
-        _signature = """---\n<b>Offsec Team</b>\noffsecteam@hackorp.com"""
+        _signature = """---\n<b>Tempest Village:</b>\nmaru@slime.com"""
         content = jinja2.Template(content).render(signature=_signature)
     except Exception as e:
         pass
     return None
 
 def sanitize(value):
-    blacklist = ['{{','}}','{%','%}','import','eval','builtins','class','[',']']
+    blacklist = ['{{','}}','{%','%}','import','eval','builtins','class','[',']', 'cycler', "\"", "`", "[", "]", "+", "init", "subprocess", "config", "update", "mro", "subclasses", "class", "base", "builtins"]
     for word in blacklist:
         if word in value:
             value = value.replace(word,'')
     if any([bool(w in value) for w in blacklist]):
         value = sanitize(value)
     return value
+
+@app.errorhandler(403)
+def forbidden_error(error):
+    return render_template('errors/403.html'), 403
+
+@app.errorhandler(400)
+def bad_request_error(error):
+    return render_template('errors/400.html'), 400
+
+@app.errorhandler(404)
+def bad_request_error(error):
+    return render_template('errors/404.html'), 404
+
+@app.errorhandler(500)
+def internal_server_error(error):
+    return render_template('errors/500.html'), 500
+
 
 # Custom decorator to check if the user is an admin
 def admin_required(func):
@@ -56,7 +72,7 @@ def admin_required(func):
         if session.get('admin'):
             return func(*args, **kwargs)
         else:
-            return "Forbidden - Admin access required", 403
+            abort(403)
 
     return wrapper
 
@@ -65,41 +81,57 @@ def admin_required(func):
 def admin():
     admin_name = session.get('admin')
     if admin_name is not None:
-        global mail
+        global msg
+        notes = session.get('notes')
         if request.method == "POST":
-            if "name" in request.form.keys() and len(request.form["name"]) != 0 and "surname" in request.form.keys() and len(request.form["surname"]) != 0 and "email" in request.form.keys() and len(request.form["email"]) != 0 and "bday" in request.form.keys() and len(request.form["bday"]) != 0 :
-                if len(admin_name) > 20:
-                    return render_template("admin.html", error="Field 'name' is too long.")
-                if len(request.form["surname"]) >= 50:
-                    return render_template("admin.html", error="Field 'surname' is too long.")
-                if len(request.form["email"]) >= 100:
-                    return render_template("admin.html", error="Field 'email' is too long.")
-                if len(request.form["bday"]) > 10:
-                    return render_template("admin.html", error="Field 'bday' is too long.")
+            if "notes" in request.form.keys() and len(request.form["notes"]) != 0 and "name" in request.form.keys() and len(request.form["name"]) != 0  and "role" in request.form.keys() and len(request.form["role"]) != 0 :
+                if len(admin_name) > 5:
+                    return render_template("admin.html", error="Wait... why admin has such long name")
+                if len(request.form["notes"]) >= 50: # notes
+                    return render_template("admin.html", error="notes is too long.")
+                if len(request.form["name"]) >= 50: # name
+                    return render_template("admin.html", error="name is too long.")
+                if len(request.form["role"]) > 10: # role
+                    return render_template("admin.html", error="role is too long.")
                 try:
-                    register_mail = jinja2.Template(mail).render(
+                    register_mail = jinja2.Template(msg).render(
                         maru=sanitize(admin_name),
-                        hacker_surname=sanitize(request.form["surname"]),
-                        hacker_email=sanitize(request.form["email"]),
-                        hacker_bday=sanitize(request.form["bday"])
+                        maru_notes=sanitize(request.form["notes"]),
+                        name_member=sanitize(request.form["name"]),
+                        role_member=sanitize(request.form["role"])
                     )
                 except Exception as e:
                     pass
-                sendmail("offsecteam@hackorp.com", register_mail)
-                print(register_mail)
+                newmember("maru@slime.com", register_mail)
+                print(register_mail) # help your debugger
                 return render_template("admin.html", success="Thank you! Your application will be reviewed within a week.")
             else:
                 return render_template("admin.html", error="Missing fields in the application form!")
         elif request.method == 'GET':
             return render_template("admin.html")        
     else:
-        return 'Session value not found.', 400
+        abort(400)
 
-    
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        username = request.form.get("username")
+        password = request.form.get("password")
+        session["user"] = username
+        return redirect(url_for("index"))
+    return render_template("login.html")    
 
 @app.route("/", methods=["GET"])
 def index():
-    return render_template("main.html")
+        username = session.get("user")
+        return render_template("main.html", username=username)
+
+@app.route("/logout")
+def logout():
+    # Clear the session to log the user out
+    session.pop("user", None)
+    return redirect(url_for("login"))
+
 
 # Done
 @app.route('/article', methods=['GET'])
@@ -118,7 +150,7 @@ def article():
         with open(f'templates/{page}', 'r') as f:
             template = f.read()
     except Exception as e:
-        template = str(e)
+        abort(404)
 
     return render_template('article.html', template=template)
 

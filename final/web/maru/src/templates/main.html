@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login</title>
-</head>
-<body>
-    <h1>Login</h1>
-    <form method="post" action="/login">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br>
-        <input type="submit" value="Login">
-    </form>
+{% extends "layout.html" %}
+{% block body %}
+    <h1>Welcome</h1>
+    {% if username %}
+    <p>Hello, {{ username }}!</p>
+    <a href="/logout">Logout</a>
+    {% else %}
+    <p>You are not logged in.</p>
+    <a href="/login">Login</a>
+    {% endif %}
 </body>
 </html>
+{% endblock %}

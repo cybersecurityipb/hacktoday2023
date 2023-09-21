@@ -1,39 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Page</title>
-</head>
-<body>
-    <h1>Admin Page</h1>
+{% extends "layout.html" %}
+{% block body %}
+<h1>Admin Page</h1>
+
+{% if success %}
+    <div class="success-message">
+        {{ success }}
+    </div>
+{% endif %}
+
+{% if error %}
+    <div class="error-message">
+        {{ error }}
+    </div>
+{% endif %}
+
+<form method="POST" action="/admin">
+    <label for="notes">Notes:</label>
+    <input type="text" id="notes" name="notes" required><br><br>
     
-    {% if success %}
-        <div class="success-message">
-            {{ success }}
-        </div>
-    {% endif %}
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
     
-    {% if error %}
-        <div class="error-message">
-            {{ error }}
-        </div>
-    {% endif %}
+    <label for="role">Role:</label>
+    <input type="text" id="role" name="role" required><br><br>
     
-    <form method="POST" action="/admin">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="surname">Surname:</label>
-        <input type="text" id="surname" name="surname" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="bday">Birth date:</label>
-        <input type="text" id="bday" name="bday" required><br><br>
-        
-        <input type="submit" value="Submit">
-    </form>
-</body>
-</html>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
