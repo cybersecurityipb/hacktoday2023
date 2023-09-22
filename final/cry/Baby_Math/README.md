@@ -8,7 +8,8 @@ My friend got an assignment from his major course, namely mathematical cryptogra
 
 ## Release
 
-- server.py
+- chall.py
+- output.txt
 
 ## Flag
 `hacktoday{b4by_I3v3I_RIGHT}`
