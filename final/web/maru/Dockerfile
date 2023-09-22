@@ -1,9 +1,7 @@
 FROM ubuntu:focal
 
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get -y update && apt-get install -y python3.10 curl
-RUN apt install socat -y
-RUN apt install python3-pip -y
+RUN apt-get -y update && apt-get install -y python3.10 curl socat python3-pip
 
 RUN groupadd -r ctf && useradd -r -g ctf ctf
 RUN mkdir /home/ctf

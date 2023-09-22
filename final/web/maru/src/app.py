@@ -135,26 +135,9 @@ def logout():
     return redirect(url_for("login"))
 
 
-# Done
 @app.route('/article', methods=['GET'])
 def article():
-    error = 0
-
-    if 'name' in request.args:
-        page = request.args.get('name')
-    else:
-        page = 'file/blank.txt'
-
-    if 'flag' in page:
-        page = 'file/notallowed.txt'
-
-    try:
-        with open(f'templates/{page}', 'r') as f:
-            template = f.read()
-    except Exception as e:
-        abort(404)
-
-    return render_template('article.html', template=template)
+    return render_template('article.html')
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0')
