@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>Admin Page</h1>
+
+{% if success %}
+    <div class="success-message">
+        {{ success }}
+    </div>
+{% endif %}
+
+{% if error %}
+    <div class="error-message">
+        {{ error }}
+    </div>
+{% endif %}
+
+<form method="POST" action="/admin">
+    <label for="notes">Notes:</label>
+    <input type="text" id="notes" name="notes" required><br><br>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="role">Role:</label>
+    <input type="text" id="role" name="role" required><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

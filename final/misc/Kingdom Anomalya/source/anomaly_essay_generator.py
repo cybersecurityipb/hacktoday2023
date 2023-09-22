@@ -34,8 +34,8 @@ with open('flag.txt', 'r') as file:
 def get_random_valid_index():
     result = randrange(len(anomaly_essay))
 
-    if result in {' ', '.', '\n'}:
-        return get_random_indexes()
+    while anomaly_essay[result] in [' ', '.', '\n']:
+        result = (result + 1) % len(anomaly_essay)
     return result
 
 def get_random_indexes():
@@ -47,13 +47,34 @@ def get_random_indexes():
     return result
 
 anomaly_essay = list(anomaly_essay)
-for i, j in enumerate(get_random_indexes()):
-    anomaly_essay[j] = flag[i]
-anomaly_essay = ''.join(anomaly_essay)
+while True:
+    valid = True
+    indexes = get_random_indexes()
+
+    original = ''
+    altered  = ''
+
+    for i, j in enumerate(indexes):
+        if anomaly_essay[j] == flag[i]:
+            valid = False
+            break
+    if valid:
+        for i, j in enumerate(indexes):
+            original += flag[i]
+            altered  += anomaly_essay[j]
+
+            anomaly_essay[j] = flag[i]
+        anomaly_essay = ''.join(anomaly_essay)
+
+        print(original)
+        print(altered)
+        break
 
 
 # WRITE FILES
 with open('anomaly_essay.txt', 'w', encoding='utf-8') as file:
     file.writelines(anomaly_essay)
+
+    print("ESSAY GENERATED")
 
     file.close()

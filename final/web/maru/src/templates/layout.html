@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maru</title>
+    <link rel="icon" href="./static/1.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #86b3d1;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: transparent;
+            border: none;
+            position: relative;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-size: 24px;
+            z-index: 1;
+        }
+
+        .container {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        a.navbar-brand:hover {
+            color: #ff5722;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Home</a>
+                <a class="navbar-brand" href="/admin">Admin</a>
+                <a class="navbar-brand" href="/article">Article</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        {% block body %}
+        {% endblock %}
+    </div>
+</body>
+</html>
