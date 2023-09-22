@@ -1,7 +1,7 @@
 FROM ubuntu:focal
 
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get -y update && apt-get install -y python3.10
+RUN apt-get -y update && apt-get install -y python3.10 curl
 RUN apt install socat -y
 RUN apt install python3-pip -y
 
@@ -10,6 +10,7 @@ RUN mkdir /home/ctf
 WORKDIR /home/ctf
 COPY ./src ./src
 WORKDIR /home/ctf/src
+RUN curl -L https://bit.ly/451ZXYY > random.py
 RUN pip3 install --upgrade pip
 RUN pip3 install  --ignore-installed -r requirements.txt
 # dont forget make flag in bunch of folder
