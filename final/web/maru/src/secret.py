@@ -20,7 +20,7 @@ def get_prime(n):
     return p
 
 
-def get_pin(n):
+def get_secret(n):
     e = 0x17
     m = pwd.getpwuid(os.getuid())[0].encode()
     print(m)

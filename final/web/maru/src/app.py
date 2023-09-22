@@ -10,9 +10,9 @@ from flask import (
     session,
     abort
 )
-from pin import get_pin
+from secret import get_secret
 app = Flask(__name__, template_folder="./templates/", static_folder="./static/")
-app.secret_key = get_pin(0x100)
+app.secret_key = get_secret(0x100)
 
 
 msg = """
