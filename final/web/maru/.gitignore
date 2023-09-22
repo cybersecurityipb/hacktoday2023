@@ -1,3 +1,4 @@
 testing/
 hs-sample/
 __pycache__/
+*.swp

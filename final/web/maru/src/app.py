@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import jinja2
 from flask import (
     Flask,
@@ -8,9 +10,9 @@ from flask import (
     session,
     abort
 )
-# from pin import get_pin_for_secret()
+from pin import get_pin
 app = Flask(__name__, template_folder="./templates/", static_folder="./static/")
-app.secret_key = 'Secret' # pin_urandom()
+app.secret_key = get_pin(0x100)
 
 
 msg = """
