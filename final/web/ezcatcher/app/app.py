@@ -37,14 +37,14 @@ def index():
                     path_mapping[random_hex] = path
                     owner_agents[path] = user_agent
                     request_data[path] = []
-                    save_to_json() 
+                    # save_to_json() 
                     return redirect(url_for('catch_requests', path=random_hex))
             else:
                 random_hex = generate_random_hex()
                 path_mapping[random_hex] = path
                 owner_agents[path] = user_agent
                 request_data[path] = []
-                save_to_json()
+                # save_to_json()
                 return redirect(url_for('catch_requests', path=random_hex))
     
     paths = list(request_data.keys())
@@ -71,7 +71,7 @@ def catch_requests(path):
                 'headers': dict(request.headers),
                 'data': req_data
             })
-            save_to_json()  
+            # save_to_json()  
 
             return render_template('path_detail.html', path=user_provided_path, request_data=request_data[user_provided_path], ua=user_agent, hex=path)
         else:
@@ -102,14 +102,14 @@ def generate_random_hex(length=30):
     characters = string.ascii_letters + string.digits
     return ''.join(random.choice(characters) for _ in range(length))
 
-def save_to_json():
-    data = {
-        'request_data': request_data,
-        'path_mapping': path_mapping,
-        'owner_agents': owner_agents
-    }
-    with open('data.json', 'w') as json_file:
-        json.dump(data, json_file, indent=4)
+# def save_to_json():
+#     data = {
+#         'request_data': request_data,
+#         'path_mapping': path_mapping,
+#         'owner_agents': owner_agents
+#     }
+#     with open('data.json', 'w') as json_file:
+#         json.dump(data, json_file, indent=4)
 
 if __name__ == '__main__':
     app.run()
