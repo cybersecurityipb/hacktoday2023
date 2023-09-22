@@ -10,13 +10,14 @@ RUN apt update && apt upgrade -y && apt update --fix-missing
 RUN apt-get update --fix-missing
 RUN apt-get install python3 python3-pip socat -y
 RUN apt-get install curl -y
-RUN pip3 install pycryptodome
+RUN pip3 install pycryptodome numpy
 
 
 # copy file
 RUN mkdir /challs
 COPY $binary /challs/$binary
 COPY server.py /challs/server.py
+COPY secret.py /challs/secret.py
 COPY flag.txt /challs/flag.txt
 WORKDIR /challs
 
