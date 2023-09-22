@@ -6,9 +6,9 @@ RUN apt update && apt upgrade -y && apt update --fix-missing
 RUN apt-get install python3 socat -y
 
 RUN mkdir /ctf
-COPY chall.py /ctf/chall.py
-COPY email.py /ctf/email.py
-COPY flag.txt /ctf/flag.txt
+COPY src/chall.py /ctf/chall.py
+COPY src/email.py /ctf/email.py
+COPY src/flag.txt /ctf/flag.txt
 WORKDIR /ctf
 
 RUN chown -R 755 /ctf/

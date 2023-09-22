@@ -6,8 +6,8 @@ RUN apt update && apt upgrade -y && apt update --fix-missing
 RUN apt-get install -y socat
 
 RUN mkdir /pwn
-COPY flag.txt /pwn/flag.txt
-COPY spirit-away /pwn/spirit-away
+COPY src/flag.txt /pwn/flag.txt
+COPY src/spirit-away /pwn/spirit-away
 WORKDIR /pwn
 
 RUN chown -R 755 /pwn
