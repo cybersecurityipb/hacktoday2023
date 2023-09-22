@@ -1,0 +1,28 @@
+version: "3"
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+    ports: 
+      - "16007:80"
+    networks:
+      - internal
+    volumes:
+      - ./application/:/var/www/html/
+      - ./logs/nginx:/var/log/nginx/
+    container_name: nginx
+  php:
+    build:
+      context: .
+      dockerfile: php/Dockerfile
+    networks:
+      - internal
+    volumes:
+      - ./logs/php.log:/var/log/fpm-php.www.log
+    container_name: php
+    expose:
+      - "9000"
+networks:
+  internal:
+    driver: bridge

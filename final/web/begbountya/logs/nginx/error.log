@@ -1,0 +1,415 @@
+2023/09/22 19:37:32 [emerg] 1#1: invalid number of arguments in "fastcgi_pass" directive in /etc/nginx/conf.d/default.conf:25
+2023/09/22 19:38:31 [emerg] 1#1: open() "/etc/nginx/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/conf.d/default.conf:25
+2023/09/22 19:39:09 [notice] 1#1: using the "epoll" event method
+2023/09/22 19:39:09 [notice] 1#1: nginx/1.25.2
+2023/09/22 19:39:09 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2023/09/22 19:39:09 [notice] 1#1: OS: Linux 6.2.0-32-generic
+2023/09/22 19:39:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/22 19:39:09 [notice] 1#1: start worker processes
+2023/09/22 19:39:09 [notice] 1#1: start worker process 29
+2023/09/22 19:39:09 [notice] 1#1: start worker process 30
+2023/09/22 19:39:09 [notice] 1#1: start worker process 31
+2023/09/22 19:39:09 [notice] 1#1: start worker process 32
+2023/09/22 19:39:09 [notice] 1#1: start worker process 33
+2023/09/22 19:39:09 [notice] 1#1: start worker process 34
+2023/09/22 19:39:09 [notice] 1#1: start worker process 35
+2023/09/22 19:39:09 [notice] 1#1: start worker process 36
+2023/09/22 19:42:52 [warn] 29#29: *19 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.29.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.29.0.3:9000", host: "localhost:16005"
+2023/09/22 19:48:25 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/22 19:48:25 [notice] 30#30: gracefully shutting down
+2023/09/22 19:48:25 [notice] 29#29: gracefully shutting down
+2023/09/22 19:48:25 [notice] 31#31: gracefully shutting down
+2023/09/22 19:48:25 [notice] 36#36: gracefully shutting down
+2023/09/22 19:48:25 [notice] 32#32: gracefully shutting down
+2023/09/22 19:48:25 [notice] 33#33: gracefully shutting down
+2023/09/22 19:48:25 [notice] 34#34: gracefully shutting down
+2023/09/22 19:48:25 [notice] 35#35: gracefully shutting down
+2023/09/22 19:48:25 [notice] 30#30: exiting
+2023/09/22 19:48:25 [notice] 29#29: exiting
+2023/09/22 19:48:25 [notice] 36#36: exiting
+2023/09/22 19:48:25 [notice] 33#33: exiting
+2023/09/22 19:48:25 [notice] 31#31: exiting
+2023/09/22 19:48:25 [notice] 32#32: exiting
+2023/09/22 19:48:25 [notice] 35#35: exiting
+2023/09/22 19:48:25 [notice] 34#34: exiting
+2023/09/22 19:48:25 [notice] 31#31: exit
+2023/09/22 19:48:25 [notice] 36#36: exit
+2023/09/22 19:48:25 [notice] 30#30: exit
+2023/09/22 19:48:25 [notice] 35#35: exit
+2023/09/22 19:48:25 [notice] 32#32: exit
+2023/09/22 19:48:25 [notice] 33#33: exit
+2023/09/22 19:48:25 [notice] 29#29: exit
+2023/09/22 19:48:25 [notice] 34#34: exit
+2023/09/22 19:48:25 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/09/22 19:48:25 [notice] 1#1: worker process 35 exited with code 0
+2023/09/22 19:48:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 19:48:25 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/09/22 19:48:25 [notice] 1#1: worker process 31 exited with code 0
+2023/09/22 19:48:25 [notice] 1#1: worker process 33 exited with code 0
+2023/09/22 19:48:25 [notice] 1#1: worker process 32 exited with code 0
+2023/09/22 19:48:25 [notice] 1#1: worker process 29 exited with code 0
+2023/09/22 19:48:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 19:48:25 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/09/22 19:48:25 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2023/09/22 19:48:25 [notice] 1#1: worker process 30 exited with code 0
+2023/09/22 19:48:25 [notice] 1#1: worker process 36 exited with code 0
+2023/09/22 19:48:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 19:48:25 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/09/22 19:48:25 [notice] 1#1: worker process 34 exited with code 0
+2023/09/22 19:48:25 [notice] 1#1: exit
+2023/09/22 19:48:26 [notice] 1#1: using the "epoll" event method
+2023/09/22 19:48:26 [notice] 1#1: nginx/1.25.2
+2023/09/22 19:48:26 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2023/09/22 19:48:26 [notice] 1#1: OS: Linux 6.2.0-32-generic
+2023/09/22 19:48:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/22 19:48:26 [notice] 1#1: start worker processes
+2023/09/22 19:48:26 [notice] 1#1: start worker process 29
+2023/09/22 19:48:26 [notice] 1#1: start worker process 30
+2023/09/22 19:48:26 [notice] 1#1: start worker process 31
+2023/09/22 19:48:26 [notice] 1#1: start worker process 32
+2023/09/22 19:48:26 [notice] 1#1: start worker process 33
+2023/09/22 19:48:26 [notice] 1#1: start worker process 34
+2023/09/22 19:48:26 [notice] 1#1: start worker process 35
+2023/09/22 19:48:26 [notice] 1#1: start worker process 36
+2023/09/22 20:00:19 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/22 20:00:19 [notice] 30#30: gracefully shutting down
+2023/09/22 20:00:19 [notice] 30#30: exiting
+2023/09/22 20:00:19 [notice] 30#30: exit
+2023/09/22 20:00:19 [notice] 36#36: gracefully shutting down
+2023/09/22 20:00:19 [notice] 32#32: gracefully shutting down
+2023/09/22 20:00:19 [notice] 36#36: exiting
+2023/09/22 20:00:19 [notice] 32#32: exiting
+2023/09/22 20:00:19 [notice] 36#36: exit
+2023/09/22 20:00:19 [notice] 35#35: gracefully shutting down
+2023/09/22 20:00:19 [notice] 32#32: exit
+2023/09/22 20:00:19 [notice] 35#35: exiting
+2023/09/22 20:00:19 [notice] 35#35: exit
+2023/09/22 20:00:19 [notice] 31#31: gracefully shutting down
+2023/09/22 20:00:19 [notice] 31#31: exiting
+2023/09/22 20:00:19 [notice] 31#31: exit
+2023/09/22 20:00:19 [notice] 34#34: gracefully shutting down
+2023/09/22 20:00:19 [notice] 34#34: exiting
+2023/09/22 20:00:19 [notice] 34#34: exit
+2023/09/22 20:00:19 [notice] 29#29: gracefully shutting down
+2023/09/22 20:00:19 [notice] 29#29: exiting
+2023/09/22 20:00:19 [notice] 29#29: exit
+2023/09/22 20:00:19 [notice] 33#33: gracefully shutting down
+2023/09/22 20:00:19 [notice] 33#33: exiting
+2023/09/22 20:00:19 [notice] 33#33: exit
+2023/09/22 20:00:19 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/09/22 20:00:19 [notice] 1#1: worker process 29 exited with code 0
+2023/09/22 20:00:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:00:19 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/09/22 20:00:19 [notice] 1#1: worker process 30 exited with code 0
+2023/09/22 20:00:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:00:19 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2023/09/22 20:00:19 [notice] 1#1: worker process 36 exited with code 0
+2023/09/22 20:00:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:00:19 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/09/22 20:00:19 [notice] 1#1: worker process 35 exited with code 0
+2023/09/22 20:00:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:00:19 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/09/22 20:00:19 [notice] 1#1: worker process 31 exited with code 0
+2023/09/22 20:00:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:00:19 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/09/22 20:00:19 [notice] 1#1: worker process 32 exited with code 0
+2023/09/22 20:00:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:00:19 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/09/22 20:00:19 [notice] 1#1: worker process 33 exited with code 0
+2023/09/22 20:00:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:00:19 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/09/22 20:00:19 [notice] 1#1: worker process 34 exited with code 0
+2023/09/22 20:00:19 [notice] 1#1: exit
+2023/09/22 20:06:25 [notice] 1#1: using the "epoll" event method
+2023/09/22 20:06:25 [notice] 1#1: nginx/1.25.2
+2023/09/22 20:06:25 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2023/09/22 20:06:25 [notice] 1#1: OS: Linux 6.2.0-32-generic
+2023/09/22 20:06:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/22 20:06:25 [notice] 1#1: start worker processes
+2023/09/22 20:06:25 [notice] 1#1: start worker process 29
+2023/09/22 20:06:25 [notice] 1#1: start worker process 30
+2023/09/22 20:06:25 [notice] 1#1: start worker process 31
+2023/09/22 20:06:25 [notice] 1#1: start worker process 32
+2023/09/22 20:06:25 [notice] 1#1: start worker process 33
+2023/09/22 20:06:25 [notice] 1#1: start worker process 34
+2023/09/22 20:06:25 [notice] 1#1: start worker process 35
+2023/09/22 20:06:25 [notice] 1#1: start worker process 36
+2023/09/22 20:14:26 [warn] 30#30: *16 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.29.0.1, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.29.0.3:9000", host: "localhost:16005"
+2023/09/22 20:31:11 [notice] 1#1: using the "epoll" event method
+2023/09/22 20:31:11 [notice] 1#1: nginx/1.25.2
+2023/09/22 20:31:11 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2023/09/22 20:31:11 [notice] 1#1: OS: Linux 6.2.0-32-generic
+2023/09/22 20:31:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/22 20:31:11 [notice] 1#1: start worker processes
+2023/09/22 20:31:11 [notice] 1#1: start worker process 29
+2023/09/22 20:31:11 [notice] 1#1: start worker process 30
+2023/09/22 20:31:11 [notice] 1#1: start worker process 31
+2023/09/22 20:31:11 [notice] 1#1: start worker process 32
+2023/09/22 20:31:11 [notice] 1#1: start worker process 33
+2023/09/22 20:31:11 [notice] 1#1: start worker process 34
+2023/09/22 20:31:11 [notice] 1#1: start worker process 35
+2023/09/22 20:31:11 [notice] 1#1: start worker process 36
+2023/09/22 20:34:38 [error] 36#36: *7 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.29.0.1, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.29.0.2:9000", host: "localhost:16007"
+2023/09/22 20:34:49 [error] 36#36: *7 FastCGI sent in stderr: "Unable to open primary script: /var/www/html/public/index.php (No such file or directory)" while reading response header from upstream, client: 172.29.0.1, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.29.0.2:9000", host: "localhost:16007"
+2023/09/22 20:34:50 [error] 36#36: *7 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.29.0.1, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.29.0.2:9000", host: "localhost:16007"
+2023/09/22 20:34:59 [error] 36#36: *7 FastCGI sent in stderr: "Unable to open primary script: /var/www/html/public/index.php (No such file or directory)" while reading response header from upstream, client: 172.29.0.1, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.29.0.2:9000", host: "localhost:16007"
+2023/09/22 20:35:00 [error] 36#36: *7 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.29.0.1, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.29.0.2:9000", host: "localhost:16007"
+2023/09/22 20:35:19 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/22 20:35:19 [notice] 30#30: gracefully shutting down
+2023/09/22 20:35:19 [notice] 33#33: gracefully shutting down
+2023/09/22 20:35:19 [notice] 29#29: gracefully shutting down
+2023/09/22 20:35:19 [notice] 33#33: exiting
+2023/09/22 20:35:19 [notice] 35#35: gracefully shutting down
+2023/09/22 20:35:19 [notice] 30#30: exiting
+2023/09/22 20:35:19 [notice] 36#36: gracefully shutting down
+2023/09/22 20:35:19 [notice] 29#29: exiting
+2023/09/22 20:35:19 [notice] 35#35: exiting
+2023/09/22 20:35:19 [notice] 31#31: gracefully shutting down
+2023/09/22 20:35:19 [notice] 31#31: exiting
+2023/09/22 20:35:19 [notice] 36#36: exiting
+2023/09/22 20:35:19 [notice] 33#33: exit
+2023/09/22 20:35:19 [notice] 30#30: exit
+2023/09/22 20:35:19 [notice] 32#32: gracefully shutting down
+2023/09/22 20:35:19 [notice] 32#32: exiting
+2023/09/22 20:35:19 [notice] 31#31: exit
+2023/09/22 20:35:19 [notice] 35#35: exit
+2023/09/22 20:35:19 [notice] 29#29: exit
+2023/09/22 20:35:19 [notice] 36#36: exit
+2023/09/22 20:35:19 [notice] 32#32: exit
+2023/09/22 20:35:19 [notice] 34#34: gracefully shutting down
+2023/09/22 20:35:19 [notice] 34#34: exiting
+2023/09/22 20:35:19 [notice] 34#34: exit
+2023/09/22 20:35:19 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/09/22 20:35:19 [notice] 1#1: worker process 32 exited with code 0
+2023/09/22 20:35:19 [notice] 1#1: worker process 35 exited with code 0
+2023/09/22 20:35:19 [notice] 1#1: worker process 36 exited with code 0
+2023/09/22 20:35:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:35:19 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2023/09/22 20:35:19 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/09/22 20:35:19 [notice] 1#1: worker process 31 exited with code 0
+2023/09/22 20:35:19 [notice] 1#1: worker process 34 exited with code 0
+2023/09/22 20:35:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:35:19 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/09/22 20:35:19 [notice] 1#1: worker process 30 exited with code 0
+2023/09/22 20:35:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:35:19 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/09/22 20:35:19 [notice] 1#1: worker process 33 exited with code 0
+2023/09/22 20:35:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:35:19 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/09/22 20:35:19 [notice] 1#1: worker process 29 exited with code 0
+2023/09/22 20:35:19 [notice] 1#1: exit
+2023/09/22 20:35:20 [notice] 1#1: using the "epoll" event method
+2023/09/22 20:35:20 [notice] 1#1: nginx/1.25.2
+2023/09/22 20:35:20 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2023/09/22 20:35:20 [notice] 1#1: OS: Linux 6.2.0-32-generic
+2023/09/22 20:35:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/22 20:35:20 [notice] 1#1: start worker processes
+2023/09/22 20:35:20 [notice] 1#1: start worker process 29
+2023/09/22 20:35:20 [notice] 1#1: start worker process 30
+2023/09/22 20:35:20 [notice] 1#1: start worker process 31
+2023/09/22 20:35:20 [notice] 1#1: start worker process 32
+2023/09/22 20:35:20 [notice] 1#1: start worker process 33
+2023/09/22 20:35:20 [notice] 1#1: start worker process 34
+2023/09/22 20:35:20 [notice] 1#1: start worker process 35
+2023/09/22 20:35:20 [notice] 1#1: start worker process 36
+2023/09/22 20:35:26 [error] 30#30: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.29.0.1, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.29.0.2:9000", host: "localhost:16007"
+2023/09/22 20:35:27 [error] 30#30: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.29.0.1, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.29.0.2:9000", host: "localhost:16007"
+2023/09/22 20:35:31 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/22 20:35:31 [notice] 30#30: gracefully shutting down
+2023/09/22 20:35:31 [notice] 31#31: gracefully shutting down
+2023/09/22 20:35:31 [notice] 32#32: gracefully shutting down
+2023/09/22 20:35:31 [notice] 35#35: gracefully shutting down
+2023/09/22 20:35:31 [notice] 31#31: exiting
+2023/09/22 20:35:31 [notice] 32#32: exiting
+2023/09/22 20:35:31 [notice] 35#35: exiting
+2023/09/22 20:35:31 [notice] 36#36: gracefully shutting down
+2023/09/22 20:35:31 [notice] 29#29: gracefully shutting down
+2023/09/22 20:35:31 [notice] 30#30: exiting
+2023/09/22 20:35:31 [notice] 36#36: exiting
+2023/09/22 20:35:31 [notice] 33#33: gracefully shutting down
+2023/09/22 20:35:31 [notice] 33#33: exiting
+2023/09/22 20:35:31 [notice] 31#31: exit
+2023/09/22 20:35:31 [notice] 30#30: exit
+2023/09/22 20:35:31 [notice] 34#34: gracefully shutting down
+2023/09/22 20:35:31 [notice] 35#35: exit
+2023/09/22 20:35:31 [notice] 32#32: exit
+2023/09/22 20:35:31 [notice] 34#34: exiting
+2023/09/22 20:35:31 [notice] 33#33: exit
+2023/09/22 20:35:31 [notice] 36#36: exit
+2023/09/22 20:35:31 [notice] 34#34: exit
+2023/09/22 20:35:31 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/09/22 20:35:31 [notice] 1#1: worker process 30 exited with code 0
+2023/09/22 20:35:31 [notice] 1#1: worker process 34 exited with code 0
+2023/09/22 20:35:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:35:31 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/09/22 20:35:31 [notice] 1#1: worker process 35 exited with code 0
+2023/09/22 20:35:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:35:31 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/09/22 20:35:31 [notice] 1#1: worker process 31 exited with code 0
+2023/09/22 20:35:31 [notice] 1#1: worker process 36 exited with code 0
+2023/09/22 20:35:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:35:31 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/09/22 20:35:31 [notice] 1#1: worker process 32 exited with code 0
+2023/09/22 20:35:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:35:31 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/09/22 20:35:31 [notice] 1#1: worker process 33 exited with code 0
+2023/09/22 20:35:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:35:31 [notice] 29#29: exiting
+2023/09/22 20:35:31 [notice] 29#29: exit
+2023/09/22 20:35:31 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/09/22 20:35:31 [notice] 1#1: worker process 29 exited with code 0
+2023/09/22 20:35:31 [notice] 1#1: exit
+2023/09/22 20:36:01 [notice] 1#1: using the "epoll" event method
+2023/09/22 20:36:01 [notice] 1#1: nginx/1.25.2
+2023/09/22 20:36:01 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2023/09/22 20:36:01 [notice] 1#1: OS: Linux 6.2.0-32-generic
+2023/09/22 20:36:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/22 20:36:01 [notice] 1#1: start worker processes
+2023/09/22 20:36:01 [notice] 1#1: start worker process 29
+2023/09/22 20:36:01 [notice] 1#1: start worker process 30
+2023/09/22 20:36:01 [notice] 1#1: start worker process 31
+2023/09/22 20:36:01 [notice] 1#1: start worker process 32
+2023/09/22 20:36:01 [notice] 1#1: start worker process 33
+2023/09/22 20:36:01 [notice] 1#1: start worker process 34
+2023/09/22 20:36:01 [notice] 1#1: start worker process 35
+2023/09/22 20:36:01 [notice] 1#1: start worker process 36
+2023/09/22 20:36:17 [notice] 1#1: using the "epoll" event method
+2023/09/22 20:36:17 [notice] 1#1: nginx/1.25.2
+2023/09/22 20:36:17 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2023/09/22 20:36:17 [notice] 1#1: OS: Linux 6.2.0-32-generic
+2023/09/22 20:36:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/22 20:36:17 [notice] 1#1: start worker processes
+2023/09/22 20:36:17 [notice] 1#1: start worker process 29
+2023/09/22 20:36:17 [notice] 1#1: start worker process 30
+2023/09/22 20:36:17 [notice] 1#1: start worker process 31
+2023/09/22 20:36:17 [notice] 1#1: start worker process 32
+2023/09/22 20:36:17 [notice] 1#1: start worker process 33
+2023/09/22 20:36:17 [notice] 1#1: start worker process 34
+2023/09/22 20:36:17 [notice] 1#1: start worker process 35
+2023/09/22 20:36:17 [notice] 1#1: start worker process 36
+2023/09/22 20:37:35 [warn] 34#34: *10 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.29.0.1, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.29.0.3:9000", host: "localhost:16007"
+2023/09/22 20:37:50 [warn] 34#34: *10 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/00/0000000002 while reading upstream, client: 172.29.0.1, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.29.0.3:9000", host: "localhost:16007"
+2023/09/22 20:38:43 [warn] 34#34: *10 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/3/00/0000000003 while reading upstream, client: 172.29.0.1, server: _, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.29.0.3:9000", host: "localhost:16007"
+2023/09/22 20:39:02 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/22 20:39:02 [notice] 33#33: gracefully shutting down
+2023/09/22 20:39:02 [notice] 29#29: gracefully shutting down
+2023/09/22 20:39:02 [notice] 30#30: gracefully shutting down
+2023/09/22 20:39:02 [notice] 31#31: gracefully shutting down
+2023/09/22 20:39:02 [notice] 32#32: gracefully shutting down
+2023/09/22 20:39:02 [notice] 34#34: gracefully shutting down
+2023/09/22 20:39:02 [notice] 33#33: exiting
+2023/09/22 20:39:02 [notice] 29#29: exiting
+2023/09/22 20:39:02 [notice] 30#30: exiting
+2023/09/22 20:39:02 [notice] 31#31: exiting
+2023/09/22 20:39:02 [notice] 32#32: exiting
+2023/09/22 20:39:02 [notice] 35#35: gracefully shutting down
+2023/09/22 20:39:02 [notice] 35#35: exiting
+2023/09/22 20:39:02 [notice] 34#34: exiting
+2023/09/22 20:39:02 [notice] 33#33: exit
+2023/09/22 20:39:02 [notice] 32#32: exit
+2023/09/22 20:39:02 [notice] 30#30: exit
+2023/09/22 20:39:02 [notice] 31#31: exit
+2023/09/22 20:39:02 [notice] 29#29: exit
+2023/09/22 20:39:02 [notice] 35#35: exit
+2023/09/22 20:39:02 [notice] 34#34: exit
+2023/09/22 20:39:02 [notice] 36#36: gracefully shutting down
+2023/09/22 20:39:02 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/09/22 20:39:02 [notice] 1#1: worker process 35 exited with code 0
+2023/09/22 20:39:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:39:02 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/09/22 20:39:02 [notice] 1#1: worker process 31 exited with code 0
+2023/09/22 20:39:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:39:02 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/09/22 20:39:02 [notice] 1#1: worker process 34 exited with code 0
+2023/09/22 20:39:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:39:02 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/09/22 20:39:02 [notice] 1#1: worker process 32 exited with code 0
+2023/09/22 20:39:02 [notice] 1#1: worker process 29 exited with code 0
+2023/09/22 20:39:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:39:02 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/09/22 20:39:02 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/09/22 20:39:02 [notice] 1#1: worker process 30 exited with code 0
+2023/09/22 20:39:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:39:02 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/09/22 20:39:02 [notice] 1#1: worker process 33 exited with code 0
+2023/09/22 20:39:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:39:02 [notice] 36#36: exiting
+2023/09/22 20:39:02 [notice] 36#36: exit
+2023/09/22 20:39:02 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2023/09/22 20:39:02 [notice] 1#1: worker process 36 exited with code 0
+2023/09/22 20:39:02 [notice] 1#1: exit
+2023/09/22 20:39:31 [notice] 1#1: using the "epoll" event method
+2023/09/22 20:39:31 [notice] 1#1: nginx/1.25.2
+2023/09/22 20:39:31 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2023/09/22 20:39:31 [notice] 1#1: OS: Linux 6.2.0-32-generic
+2023/09/22 20:39:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/22 20:39:31 [notice] 1#1: start worker processes
+2023/09/22 20:39:31 [notice] 1#1: start worker process 29
+2023/09/22 20:39:31 [notice] 1#1: start worker process 30
+2023/09/22 20:39:31 [notice] 1#1: start worker process 31
+2023/09/22 20:39:31 [notice] 1#1: start worker process 32
+2023/09/22 20:39:31 [notice] 1#1: start worker process 33
+2023/09/22 20:39:31 [notice] 1#1: start worker process 34
+2023/09/22 20:39:31 [notice] 1#1: start worker process 35
+2023/09/22 20:39:31 [notice] 1#1: start worker process 36
+2023/09/22 20:40:30 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/22 20:40:30 [notice] 30#30: gracefully shutting down
+2023/09/22 20:40:30 [notice] 29#29: gracefully shutting down
+2023/09/22 20:40:30 [notice] 30#30: exiting
+2023/09/22 20:40:30 [notice] 30#30: exit
+2023/09/22 20:40:30 [notice] 32#32: gracefully shutting down
+2023/09/22 20:40:30 [notice] 31#31: gracefully shutting down
+2023/09/22 20:40:30 [notice] 32#32: exiting
+2023/09/22 20:40:30 [notice] 31#31: exiting
+2023/09/22 20:40:30 [notice] 32#32: exit
+2023/09/22 20:40:30 [notice] 31#31: exit
+2023/09/22 20:40:30 [notice] 33#33: gracefully shutting down
+2023/09/22 20:40:30 [notice] 34#34: gracefully shutting down
+2023/09/22 20:40:30 [notice] 35#35: gracefully shutting down
+2023/09/22 20:40:30 [notice] 34#34: exiting
+2023/09/22 20:40:30 [notice] 35#35: exiting
+2023/09/22 20:40:30 [notice] 33#33: exiting
+2023/09/22 20:40:30 [notice] 34#34: exit
+2023/09/22 20:40:30 [notice] 35#35: exit
+2023/09/22 20:40:30 [notice] 33#33: exit
+2023/09/22 20:40:30 [notice] 36#36: gracefully shutting down
+2023/09/22 20:40:30 [notice] 36#36: exiting
+2023/09/22 20:40:30 [notice] 36#36: exit
+2023/09/22 20:40:30 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/09/22 20:40:30 [notice] 1#1: worker process 32 exited with code 0
+2023/09/22 20:40:30 [notice] 1#1: worker process 35 exited with code 0
+2023/09/22 20:40:30 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:40:30 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/09/22 20:40:30 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2023/09/22 20:40:30 [notice] 1#1: worker process 36 exited with code 0
+2023/09/22 20:40:30 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:40:30 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/09/22 20:40:30 [notice] 1#1: worker process 31 exited with code 0
+2023/09/22 20:40:30 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:40:30 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/09/22 20:40:30 [notice] 1#1: worker process 33 exited with code 0
+2023/09/22 20:40:30 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:40:30 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/09/22 20:40:30 [notice] 1#1: worker process 30 exited with code 0
+2023/09/22 20:40:30 [notice] 1#1: worker process 34 exited with code 0
+2023/09/22 20:40:30 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/22 20:40:30 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/09/22 20:40:30 [notice] 29#29: exiting
+2023/09/22 20:40:30 [notice] 29#29: exit
+2023/09/22 20:40:30 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/09/22 20:40:30 [notice] 1#1: worker process 29 exited with code 0
+2023/09/22 20:40:30 [notice] 1#1: exit
+2023/09/22 20:40:41 [notice] 1#1: using the "epoll" event method
+2023/09/22 20:40:41 [notice] 1#1: nginx/1.25.2
+2023/09/22 20:40:41 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2023/09/22 20:40:41 [notice] 1#1: OS: Linux 6.2.0-32-generic
+2023/09/22 20:40:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/22 20:40:41 [notice] 1#1: start worker processes
+2023/09/22 20:40:41 [notice] 1#1: start worker process 29
+2023/09/22 20:40:41 [notice] 1#1: start worker process 30
+2023/09/22 20:40:41 [notice] 1#1: start worker process 31
+2023/09/22 20:40:41 [notice] 1#1: start worker process 32
+2023/09/22 20:40:41 [notice] 1#1: start worker process 33
+2023/09/22 20:40:41 [notice] 1#1: start worker process 34
+2023/09/22 20:40:41 [notice] 1#1: start worker process 35
+2023/09/22 20:40:41 [notice] 1#1: start worker process 36
