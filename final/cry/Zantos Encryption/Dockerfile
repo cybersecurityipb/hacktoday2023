@@ -9,9 +9,6 @@ ENV binary=${binary}
 RUN apt update && apt upgrade -y && apt update --fix-missing
 RUN apt-get update --fix-missing
 RUN apt-get install python3 python3-pip socat -y
-RUN apt-get install curl -y
-RUN pip3 install hashlib
-
 
 # copy file
 RUN mkdir /challs
