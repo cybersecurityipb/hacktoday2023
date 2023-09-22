@@ -1,5 +1,5 @@
 import math
-fl_g = """hacktoday{b4by_I3v3I_RIGHT}"""
+fl_g = """flag{flag}"""
 def x(text, key):
     return ''.join([chr(ord(c) ^ key) for c in text])
 def a(text, value):
