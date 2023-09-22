@@ -1,6 +1,6 @@
 version: '3'
 services:
-  hacktoday:
+  pyjail:
     container_name: email-kompani
     network_mode: bridge
     restart: always
