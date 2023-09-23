@@ -1,6 +1,7 @@
 version: '3'
 services:
-  art:
+  hacktoday:
+    container_name: berlian
     restart: always
     build:
       context: .
