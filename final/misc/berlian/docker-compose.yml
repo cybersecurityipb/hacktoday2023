@@ -1,8 +1,9 @@
 version: '3'
 services:
-  art:
+  hacktoday:
+    container_name: berlian
     restart: always
     build:
       context: .
     ports:
-      - "19010:5000"
+      - "19023:5000"

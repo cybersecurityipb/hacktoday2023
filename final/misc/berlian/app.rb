@@ -1,14 +1,12 @@
 #!/usr/bin/env ruby
 
-Dir.glob("*.txt").each do |file|
-  next if file == "flag.txt"
-  File.rename(file, "flag.txt")
-end
+$stdout.sync = true
 
-flag = "flag.txt"
+txt_files = Dir.glob("*.txt")
+flag = txt_files.first
 
 timestamp = Time.now.to_i.to_s
-salted = `echo "#{timestamp}" | cat "#{flag}" - | md5sum | awk '{ print $1 }'`.chomp
+salted = `echo "#{timestamp}" | md5sum | awk '{ print $1 }'`.chomp
 newflag = "#{salted}.#{File.basename(flag).split(".").last}"
 
 File.rename(flag, newflag)
@@ -19,7 +17,9 @@ banned_symbols = ["$", "[", "]", "*", "!", "{", "}", "|", "/", "a", "i", "u", "o
 
 loop do
   print 'sepuh@hacker:~$ '
-  exp = gets.chomp
+  exp = gets
+  exp ||= ''
+  exp.chomp!
 
   if banned_commands.any? { |command| exp.include?(command) } ||
      banned_keywords.any? { |keyword| exp.match(/#{keyword}/i) } ||

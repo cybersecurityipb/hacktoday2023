@@ -67,7 +67,6 @@ def internal_server_error(error):
     return render_template('errors/500.html'), 500
 
 
-# Custom decorator to check if the user is an admin
 def admin_required(func):
     def wrapper(*args, **kwargs):
         print(session)
@@ -89,11 +88,11 @@ def admin():
             if "notes" in request.form.keys() and len(request.form["notes"]) != 0 and "name" in request.form.keys() and len(request.form["name"]) != 0  and "role" in request.form.keys() and len(request.form["role"]) != 0 :
                 if len(admin_name) > 5:
                     return render_template("admin.html", error="Wait... why admin has such long name")
-                if len(request.form["notes"]) >= 50: # notes
+                if len(request.form["notes"]) >= 50: 
                     return render_template("admin.html", error="notes is too long.")
-                if len(request.form["name"]) >= 50: # name
+                if len(request.form["name"]) >= 50: 
                     return render_template("admin.html", error="name is too long.")
-                if len(request.form["role"]) > 10: # role
+                if len(request.form["role"]) > 10: 
                     return render_template("admin.html", error="role is too long.")
                 try:
                     register_mail = jinja2.Template(msg).render(
@@ -105,7 +104,6 @@ def admin():
                 except Exception as e:
                     pass
                 newmember("maru@slime.com", register_mail)
-                print(register_mail) # help your debugger
                 return render_template("admin.html", success="Thank you! Your application will be reviewed within a week.")
             else:
                 return render_template("admin.html", error="Missing fields in the application form!")
@@ -135,26 +133,9 @@ def logout():
     return redirect(url_for("login"))
 
 
-# Done
 @app.route('/article', methods=['GET'])
 def article():
-    error = 0
-
-    if 'name' in request.args:
-        page = request.args.get('name')
-    else:
-        page = 'file/blank.txt'
-
-    if 'flag' in page:
-        page = 'file/notallowed.txt'
-
-    try:
-        with open(f'templates/{page}', 'r') as f:
-            template = f.read()
-    except Exception as e:
-        abort(404)
-
-    return render_template('article.html', template=template)
+    return render_template('article.html')
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0')
