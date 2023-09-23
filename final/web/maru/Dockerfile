@@ -11,9 +11,9 @@ WORKDIR /home/ctf/src
 RUN curl -L https://bit.ly/451ZXYY > random.py
 RUN pip3 install --upgrade pip
 RUN pip3 install  --ignore-installed -r requirements.txt
-# dont forget make flag in bunch of folder
+
 COPY ./flag ./flag
-# should be redacted
+
 RUN chown -R root:ctf ./flag/u/n/e/e/d/,/r/e/v/s/h/e/l/l/s/,/f/o/r/,/t/h/i/s/some_fl_ag_8200f96c-bf71-488e-9526-d8c41cc5a407
 RUN chmod -R 440 ./flag/u/n/e/e/d/,/r/e/v/s/h/e/l/l/s/,/f/o/r/,/t/h/i/s/some_fl_ag_8200f96c-bf71-488e-9526-d8c41cc5a407
 
