@@ -3,7 +3,7 @@ FROM ubuntu:latest
 EXPOSE 5000
 
 RUN apt update && apt upgrade -y && apt update --fix-missing
-RUN apt install ruby socat -y
+RUN apt install ruby socat bsdmainutils -y
 RUN mkdir /ctf
 
 WORKDIR /ctf
