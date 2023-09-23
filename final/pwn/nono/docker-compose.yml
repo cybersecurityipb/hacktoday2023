@@ -8,5 +8,4 @@ services:
     working_dir: /pwn
     ports:
       - "17001:5000" # exposed:local
-      - "5001:5001"
     read_only: true

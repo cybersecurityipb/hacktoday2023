@@ -8,15 +8,16 @@ RUN apt update --fix-missing
 RUN apt-get install -y socat
 
 RUN mkdir /pwn
-COPY flag.txt /pwn/flag.txt
-COPY release/webserver /pwn/webserver
+COPY debug.txt /pwn/debug.txt
+COPY flag-random_taext_nono_linz_is_here_ulala.txt /flag-random_taext_nono_linz_is_here_ulala.txt
+COPY release/nono /pwn/nono
 WORKDIR /pwn
 
 RUN chown -R 755 /pwn
 RUN chmod 700 /usr/bin/* /bin/* /tmp /dev/shm
 RUN chmod 755 /usr/bin/env /bin/dash /bin/bash /bin/sh /bin/cat /usr/bin/id /bin/ls
-RUN chmod +x /pwn/webserver
+RUN chmod +x /pwn/nono
 
 
 USER ctf
-CMD ["/pwn/webserver"]
+CMD ["/pwn/nono"]
