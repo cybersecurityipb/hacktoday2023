@@ -52,7 +52,7 @@ app.get("/", (req, res) => {
   res.render("login");
 });
 
-const flag = "hacktoday{c0nr4tul4t10n5_y0u_h4v3_4cc3ss3d_th3_fl4g}";
+const flag = "agrihack0x08{c0nr4tul4t10n5_y0u_h4v3_4cc3ss3d_th3_fl4g_N1C33}";
 
 app.get("/home", verifyToken, async (req, res) => {
   const { naming } = req.session;
